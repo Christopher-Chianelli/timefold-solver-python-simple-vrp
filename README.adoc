@@ -1,0 +1,7 @@
+= Simple VRP example for Timefold Solver in Python
+
+. Create a venv `python -m venv .venv`
+. Activate the venv `. .venv/bin/activate`
+. Install requirements `pip install -r requirements.txt`
+. Run `python main.py`
+
