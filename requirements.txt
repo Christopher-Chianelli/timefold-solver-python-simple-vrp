@@ -1,0 +1,2 @@
+timefold-solver==1.10.0a0
+
