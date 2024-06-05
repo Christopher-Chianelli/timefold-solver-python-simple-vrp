@@ -100,9 +100,10 @@ turtle.colormode(255)
 turtle.setup(100 * scale, 100 * scale)
 turtle.title(f'Routing plan - Score {solution.score.score}')
 offset = 50 * scale
+turtle.penup()
 for vehicle in solution.vehicles:
     color = (random.randint(0, 256), random.randint(0, 256), random.randint(0, 256))
-    turtle.teleport(vehicle.start_location.latitude * scale - offset, vehicle.start_location.longitude * scale - offset)
+    turtle.goto(vehicle.start_location.latitude * scale - offset, vehicle.start_location.longitude * scale - offset)
     turtle.color(color)
     turtle.dot(3 * scale)
     turtle.pendown()
